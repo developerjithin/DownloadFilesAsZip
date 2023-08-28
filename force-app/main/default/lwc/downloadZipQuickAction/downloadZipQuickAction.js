@@ -6,6 +6,7 @@ import { NavigationMixin } from "lightning/navigation";
 export default class DownloadZipQuickAction extends NavigationMixin(LightningElement) {
   
     @api recordId;
+    @api accountId;
     @track fileIds = '';
     @api invoke() {
         console.log('### I am here!');
